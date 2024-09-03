@@ -1,0 +1,15 @@
+name: 'Setup bun PHP action'
+author: 'Jose Monroy'
+description: 'Action bun docker'
+
+inputs:
+  command:
+    description: 'bun command'
+    required: false
+    default: 'install'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
+
