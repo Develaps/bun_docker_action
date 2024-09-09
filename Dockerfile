@@ -1,4 +1,5 @@
 FROM oven/bun:latest
 
+COPY entrypoint.sh /entrypoint.sh
 
-RUN bun install
+ENTRYPOINT ["/entrypoint.sh"]
