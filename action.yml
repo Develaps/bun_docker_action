@@ -1,13 +1,6 @@
 name: 'Setup Bun docker Action'
 author: J-Monroy
 description: 'Action enviroment Bun '
-inputs:
-    command:
-        description: 'User defined command (e.g. install)'
-        required: false
-        default: 'bun install'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.command }}
