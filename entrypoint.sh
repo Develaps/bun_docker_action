@@ -1,5 +1,3 @@
 #!/bin/sh 
 
-printenv
-
-bun $*  
+bun $*  && bunx --bun astro build
